@@ -1,4 +1,4 @@
-(defproject clojure-solution "0.1.0-SNAPSHOT"
+(defproject catbook "0.1.0-SNAPSHOT"
 
   :description "FIXME: write description"
 
@@ -15,7 +15,7 @@
                  [hiccups                 "0.2.0"]
                  ]
 
-  :main clojure-solution.main
+  :main catbook.main
 
   :plugins [[lein-cljsbuild "0.3.0"]]
 
@@ -25,7 +25,7 @@
                          :optimizations :whitespace
                          :pretty-print true}}]
 
-    :crossovers [clojure-solution.crossover.html]
+    :crossovers [catbook.crossover.html]
     :crossover-path "crossover-cljs"
     :crossover-jar true }
 )

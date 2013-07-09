@@ -1,4 +1,4 @@
-(ns clojure-solution.main
+(ns catbook.main
   (:require [clojurewerkz.cassaforte.client :as client])
   (:use clojurewerkz.cassaforte.cql
         clojurewerkz.cassaforte.query))

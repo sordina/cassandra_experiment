@@ -10,7 +10,7 @@
 ;*CLJSBUILD-REMOVE*; )
 
 
+
 (h/defhtml my-template []
   [:div
-    [:a {:href "https://github.com/weavejester/hiccup"}
-      "Hiccup"]])
+    [:a {:href "TODO HTML"} "Hiccup"]])

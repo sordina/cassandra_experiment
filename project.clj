@@ -21,11 +21,12 @@
 
   :cljsbuild {
     :builds [{:source-paths ["src" "crossover-cljs"]
-              :compiler {:output-to "main.js"
+              :compiler {:output-to     "main.js"
+                         ; :target        :nodejs
                          :optimizations :whitespace
-                         :pretty-print true}}]
+                         :pretty-print  true}}]
 
-    :crossovers [catbook.crossover.html]
+    :crossovers     [catbook.crossover.html]
     :crossover-path "crossover-cljs"
-    :crossover-jar true }
+    :crossover-jar  true }
 )

@@ -13,11 +13,12 @@
                  [compojure               "1.1.5"]
                  [hiccup                  "1.0.3"]
                  [hiccups                 "0.2.0"]
+                 [jayq                    "2.4.0"]
                  ]
 
   :main catbook.main
 
-  :plugins [[lein-cljsbuild "0.3.0"]]
+  :plugins [ [lein-cljsbuild "0.3.0"] ]
 
   :cljsbuild {
     :builds [{:source-paths ["src" "crossover-cljs"]
@@ -26,7 +27,7 @@
                          :optimizations :whitespace
                          :pretty-print  true}}]
 
-    :crossovers     [catbook.crossover.html]
+    :crossovers     [catbook.crossover]
     :crossover-path "crossover-cljs"
     :crossover-jar  true }
 )

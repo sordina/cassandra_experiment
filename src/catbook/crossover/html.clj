@@ -10,7 +10,13 @@
 ;*CLJSBUILD-REMOVE*; )
 
 
+(defn img [src] [:img {:src src}])
 
-(h/defhtml my-template []
-  [:div
-    [:a {:href "TODO HTML"} "Hiccup"]])
+(defn avatar [src] [:a.avatar {:href "/me"}
+                          [:img {:src src}]])
+
+(def friend img)
+
+(defn friends [& args] [:div.friends args])
+
+(defn sidebar [a f] [:div.sidebar a [:hr] f])
